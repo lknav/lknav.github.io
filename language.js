@@ -19,7 +19,7 @@ function translateToEnglish() {
     if (document.getElementById('nav-about')) {
         document.getElementById('nav-about').textContent = 'ABOUT';
         document.getElementById('nav-works').textContent = 'WORKS';
-        document.getElementById('nav-shop').textContent = 'SHOP';
+        document.getElementById('nav-shop').textContent = 'PRIVATE CHANNEL';
         document.getElementById('nav-links').textContent = 'LINKS';
         
     }
@@ -43,8 +43,8 @@ function translateToEnglish() {
 
     if (document.getElementById('shop-text')) {
         document.getElementById('shop-text').textContent = 'Like the work and want to support?';
-        document.getElementById('shop-text-animation1').innerHTML = '⇒private.private.<br>⇒private.private.<br>⇒private.private.<br>⇒private.private.<br>⇒private.private.<br>⇒private.private.<br>⇒private.private.<br>⇒private.private.<br>⇒private.private.<br>⇒private.private.<br>⇒private.private.<br>';
-        document.getElementById('shop-text-animation2').innerHTML = '⇒private.private.<br>⇒private.private.<br>⇒private.private.<br>⇒private.private.<br>⇒private.private.<br>⇒private.private.<br>⇒private.private.<br>⇒private.private.<br>⇒private.private.<br>⇒private.private.<br>⇒private.private.<br>';
+        document.getElementById('shop-text-animation1').innerHTML = '⇒private ch.<br>⇒private ch.<br>⇒private ch.<br>⇒private ch.<br>⇒private ch.<br>⇒private ch.<br>⇒private ch.<br>⇒private ch.<br>⇒private ch.<br>⇒private ch.<br>⇒private ch.<br>';
+        document.getElementById('shop-text-animation2').innerHTML = '⇒private ch.<br>⇒private ch.<br>⇒private ch.<br>⇒private ch.<br>⇒private ch.<br>⇒private ch.<br>⇒private ch.<br>⇒private ch.<br>⇒private ch.<br>⇒private ch.<br>⇒private ch.<br>';
     }
 
    if (document.getElementById('ashesrole')) {
@@ -98,7 +98,7 @@ function translateToRussian() {
     if (document.getElementById('nav-about')) {
         document.getElementById('nav-about').textContent = 'СВЕДЕНИЯ';
         document.getElementById('nav-works').textContent = 'РАБОТЫ';
-        document.getElementById('nav-shop').textContent = 'МАГАЗИН';
+        document.getElementById('nav-shop').textContent = 'ПРИВАТНЫЙ КАНАЛ';
         document.getElementById('nav-links').textContent = 'ССЫЛКИ';
     }
 
@@ -121,8 +121,8 @@ function translateToRussian() {
 
     if (document.getElementById('shop-text')) {
         document.getElementById('shop-text').textContent = 'Нравятся работы и есть желание поддержать?';
-        document.getElementById('shop-text-animation1').innerHTML = '⇒ПРИВАТ.<br>⇒ПРИВАТ.<br>⇒ПРИВАТ.<br>⇒ПРИВАТ.<br>⇒ПРИВАТ.<br>⇒ПРИВАТ.<br>⇒ПРИВАТ.<br>⇒ПРИВАТ.<br>⇒ПРИВАТ.<br>⇒ПРИВАТ.<br>⇒ПРИВАТ.';
-        document.getElementById('shop-text-animation2').innerHTML = '⇒ПРИВАТ.<br>⇒ПРИВАТ.<br>⇒ПРИВАТ.<br>⇒ПРИВАТ.<br>⇒ПРИВАТ.<br>⇒ПРИВАТ.<br>⇒ПРИВАТ.<br>⇒ПРИВАТ.<br>⇒ПРИВАТ.<br>⇒ПРИВАТ.<br>⇒ПРИВАТ.';
+        document.getElementById('shop-text-animation1').innerHTML = '⇒ПРИВАТКА.<br>⇒ПРИВАТКА.<br>⇒ПРИВАТКА.<br>⇒ПРИВАТКА.<br>⇒ПРИВАТКА.<br>⇒ПРИВАТКА.<br>⇒ПРИВАТКА.<br>⇒ПРИВАТКА.<br>⇒ПРИВАТКА.<br>⇒ПРИВАТКА.<br>⇒ПРИВАТКА.';
+        document.getElementById('shop-text-animation2').innerHTML = '⇒ПРИВАТКА.<br>⇒ПРИВАТКА.<br>⇒ПРИВАТКА.<br>⇒ПРИВАТКА.<br>⇒ПРИВАТКА.<br>⇒ПРИВАТКА.<br>⇒ПРИВАТКА.<br>⇒ПРИВАТКА.<br>⇒ПРИВАТКА.<br>⇒ПРИВАТКА.<br>⇒ПРИВАТКА.';
     }
 
     if (document.getElementById('ashesrole')) {
