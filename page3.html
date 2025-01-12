@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Alumni Sans', sans-serif;
+            overflow: hidden;
+        }
+        .sidebar {
+            height: auto;
+            background-color: #ffffff;
+            letter-spacing: 5px;
+            padding: 0;
+            justify-content: center;
+        }
+
+        .nav-item {
+            font-size: 25px;
+            color: #000000;
+            text-align: center;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .nav-item:hover,
+        .nav-item:focus {
+            text-decoration: none;
+            color: #000000;
+            background-color: #bebebe;
+        }
+
+        .nav-item.active {
+            background-size: cover;
+            background-position: center;
+            background-image: url('icons/active selection.png');
+        }
+
+        .content {
+            background-image: url("backgrounds/shopbackground.png");
+            background-size: cover;
+            height: 100vh;
+            color: #ffffff;
+            font-size: calc(30px + 30 * (100vw / 1440) + 30 * (100vh / 1440));
+            letter-spacing: 10px;
+        }
+        
+        .shop {
+            background-image:
+            linear-gradient(to top, #00000000, #000000), 
+            url("backgrounds/shopbackground2.jpg");
+            background-size: cover;
+            height: 100vh;
+            cursor: pointer;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .shop-text {
+            color: white;
+            -webkit-text-stroke: 1px rgb(255, 255, 255);
+            background-clip: text;
+            -webkit-text-fill-color: rgba(255, 255, 255, 0);
+            font-weight: 500;
+            position: absolute;
+            white-space: nowrap;
+            transform: translateY(100%);
+            animation: moveText 6s linear infinite;
+        }
+
+        .shop-text:nth-child(2) {
+            animation-delay: 3s;
+        }
+
+        #language-switcher {
+            cursor: pointer;
+            font-size: 25px;
+            color: #000000;
+            text-align: center;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        #language-switcher:hover {
+            background-color: #bebebe;
+        }
+
+        @keyframes moveText {
+            0% {
+                transform: translateY(100%);
+            }
+            100% {
+                transform: translateY(-100%);
+            }
+        }
+
+        @media(min-width: 320px) {
+            .shop-text {
+                font-size: 65px;
+                line-height: 80px;
+                letter-spacing: 10px;
+            }
+        }
+        
+        @media(min-width: 375px) {
+            .shop-text {
+                font-size: 80px;
+                line-height: 80px;
+                letter-spacing: 10px;
+            }
+        } 
+        
+        @media(min-width: 425px) {
+            .shop-text {
+                font-size: 100px;
+                line-height: 80px;
+                letter-spacing: 10px;
+            }
+        } 
+        
+        @media(min-width: 768px) {
+            .shop-text {
+                font-size: 115px;
+                line-height: 80px;
+                letter-spacing: 40px;
+            }
+        } 
+        
+        @media(min-width: 992px) {
+            .shop-text {
+                font-size: 85px;
+                line-height: 110px;
+                letter-spacing: 14px;
+            }
+        } 
+        
+        @media(min-width: 1440px) {
+            .shop-text {
+                font-size: 100px;
+                line-height: 110px;
+                letter-spacing: 30px;
+            }
+        } 
+        
+        @media(max-width:992px) {
+            body {
+                overflow-y: scroll;
+                overflow-x: hidden;
+            }
+        }
+   </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="sidebar col-12 col-lg-2">
+                <a id="nav-about" href="#about" class="nav-item nav-link" onclick="redirectToPage('page1.html')">СВЕДЕНИЯ</a>
+                <a id="nav-works" href="#works" class="nav-item nav-link" onclick="redirectToPage('page2.html')">РАБОТЫ</a>
+                <a id="nav-shop" href="#shop" class="nav-item nav-link" onclick="redirectToPage('page3.html')">МАГАЗИН</a>
+                <a id="nav-links" href="https://taplink.cc/lkn" class="nav-item nav-link" target="_blank">ССЫЛКИ</a>
+                <div id="language-switcher" class="nav-item nav-link" onclick="toggleLanguage()">EN</div>
+            </nav>
+        
+        <div class="content col-12 col-lg-5 position-relative d-flex justify-content-center align-items-center">
+            <div class="text-content text-left" id="shop-text">
+                <p>
+                    Понравились биты или звуковые эффекты?
+                </p>
+            </div>
+        </div>
+        
+        <div id="shop-column" class="shop col-12 col-lg-5 position-relative d-flex justify-content-center align-items-center">
+            <p class="shop-text" id="shop-text-animation1">
+                ⇒МАГАЗИН.<br>
+                ⇒МАГАЗИН.<br>
+                ⇒МАГАЗИН.<br>
+                ⇒МАГАЗИН.<br>
+                ⇒МАГАЗИН.<br>
+                ⇒МАГАЗИН.<br>
+                ⇒МАГАЗИН.<br>
+                ⇒МАГАЗИН.<br>
+                ⇒МАГАЗИН.<br>
+                ⇒МАГАЗИН.<br>
+                ⇒МАГАЗИН.
+            </p>
+            <p class="shop-text" id="shop-text-animation2">
+                ⇒МАГАЗИН.<br>
+                ⇒МАГАЗИН.<br>
+                ⇒МАГАЗИН.<br>
+                ⇒МАГАЗИН.<br>
+                ⇒МАГАЗИН.<br>
+                ⇒МАГАЗИН.<br>
+                ⇒МАГАЗИН.<br>
+                ⇒МАГАЗИН.<br>
+                ⇒МАГАЗИН.<br>
+                ⇒МАГАЗИН.<br>
+                ⇒МАГАЗИН.
+            </p>
+        </div>
+        
+        </div>
+    </div>
+    <script src="language.js"></script>
+    <script src="activeselection.js"></script>
+    <script src="redirection.js"></script>
+    <script> document.getElementById("shop-column").addEventListener("click", function() { window.location.href = "https://t.me/lookeentg"; } ); </script>
+</body>
+</html>

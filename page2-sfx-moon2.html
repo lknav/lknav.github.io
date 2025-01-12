@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Alumni Sans', sans-serif;
+            overflow: hidden;
+            margin: 0;
+            color: #ffffff;
+        }
+        
+        .sidebar {
+            background-color: #ffffff;
+            padding: 0;
+            letter-spacing: 5px;
+            z-index: 1;
+        }
+
+        .nav-item {
+            font-size: 25px;
+            color: #000000;
+            text-align: center;
+            padding: 8px, 16px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .nav-item:hover,
+        .nav-item:focus {
+            text-decoration: none;
+            color: #000000;
+            background-color: #bebebe;
+        }
+
+        .nav-item.active {
+            background-size: cover;
+            background-position: center;
+            background-image: url('icons/active selection.png');
+        }
+
+        .nav-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .container-fluid {
+            padding: 0;
+            height: 100vh; 
+        }
+        
+        .row {
+            margin: 0;
+            height: 100%;
+        }
+
+        .content {
+            height: 100vh; 
+            padding: 0; 
+            position: relative; 
+        }
+
+        .column1 {
+            display: flex;
+            align-items: center; 
+            justify-content: center; 
+            height: 100vh;
+        }
+        
+        .column1,
+        .column2 {
+            height: 100vh;
+            padding-bottom: 20px; 
+        }
+
+        .column2 {
+            background-color: #0000006e;
+            background-blend-mode:saturation;
+            background-size: cover;
+            overflow-y: auto;
+            width: 100%;
+        }
+
+        .videoplayer video {
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; 
+        }
+
+        .videoplayer {
+            position: absolute; 
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: -1; 
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 2rem + 2.5vw, 5rem);
+        }
+
+        h4 {
+            font-size: clamp(1.563rem, 1.25rem + 1.56vw, 3.125rem);
+        }
+
+        h6 {
+            font-size: clamp(1rem, 0.8rem + 1vw, 2rem);
+        }
+
+        @media (max-width: 992px) {
+            body {
+                overflow-y: scroll; 
+            }
+
+            .content {
+                height: auto; 
+            }
+
+            .column1,
+            .column2 {
+                width: 100%; 
+                height: auto; 
+            }
+
+            .videoplayer {
+                position: fixed; 
+            }
+        }
+
+        #mooninspiration, #moonartist, #moonpublisher, #moonstudio {
+            text-decoration: none;
+            cursor: pointer;
+            color: #7d73ff;
+            transition: color 0.3s ease;
+        }
+
+        #mooninspiration:hover, #moonartist:hover, #moonpublisher:hover, #moonstudio:hover {
+            color: #483bff;
+        }
+
+        #language-switcher {
+            cursor: pointer;
+            font-size: 25px;
+            color: #000000;
+            text-align: center;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        #language-switcher:hover {
+            background-color: #bebebe;
+        }
+
+   </style>
+</head>
+
+<body>
+    
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="sidebar col-12 col-lg-2">
+                <a id="nav-about" href="#about" class="nav-item nav-link" onclick="redirectToPage('page1.html')">СВЕДЕНИЯ</a>
+                <a id="nav-works" href="#works" class="nav-item nav-link" onclick="redirectToPage('page2.html')">РАБОТЫ</a>
+                <a id="nav-shop" href="#shop" class="nav-item nav-link" onclick="redirectToPage('page3.html')">МАГАЗИН</a>
+                <a id="nav-links" href="https://taplink.cc/lkn" class="nav-item nav-link" target="_blank">ССЫЛКИ</a>
+                <a id="back" href="#back" class="back nav-item nav-link" onclick="redirectToPage('page2-sfx.html')">НАЗАД</a>
+                <div id="language-switcher" class="nav-item nav-link" onclick="toggleLanguage()">EN</div>
+            </nav>
+            
+            <div class="content col-12 col-lg-10">
+                <div class="videoplayer">
+                    <video autoplay loop muted class="embed-responsive" id="vidsupport">
+                        <source src="backgrounds/videos/moon2vid.mp4" type="video/mp4">
+                        Ваш браузер не поддерживает видео.
+                    </video>
+                </div>
+                <div class="row">
+                    <div class="column1 col-12 col-lg-6" style="padding-left: 0; padding-right: 0;">
+                        <div class="soundcloudplayer" style="position:relative; width: 100%; opacity: 0.8;">
+                        <video controls width="100%" height="100%" id="vidsupport">
+                            <source src="works/SailorMoon2.mp4" type="video/mp4">
+                            Ваш браузер не поддерживает видео.
+                        </video>
+                        </div>
+                    </div>
+
+                    <div class="column2 col-12 col-lg-6">
+                        <div class="text-content text-left">
+                            <h1 id="moonrole">РОЛЬ : НЕТ (ПЕРЕРАБОТКА / НЕОФИЦИАЛЬНАЯ ВЕРСИЯ)</h1>
+                            <h1 id="mooninspiration">ВДОХНОВЛЕНО: SAILOR MOON</h1>
+                            <h6 id="moontext">Все права на Сейлор Мун принадлежат <span id="artist">Наоко Такэути</span>, издательству <span id="publisher">Kodansha</span> и студии <span id="studio">Toei Animation</span>.</h6>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="language.js"></script>
+    <script src="activeselection.js"></script>
+    <script src="redirection.js"></script>
+</body>
+</html>

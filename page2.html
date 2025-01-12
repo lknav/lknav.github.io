@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Alumni Sans', sans-serif;
+            overflow: hidden;
+        }
+        .sidebar {
+            height: auto;
+            background-color: #ffffff;
+            letter-spacing: 5px;
+            padding: 0;
+        }
+
+        .nav-item {
+            font-size: 25px;
+            color: #000000;
+            text-align: center;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .nav-item:hover,
+        .nav-item:focus {
+            text-decoration: none;
+            color: #000000;
+            background-color: #bebebe;
+        }
+
+        .nav-item.active {
+            background-size: cover;
+            background-position: center;
+            background-image: url('icons/active selection.png');
+        }
+
+        .background-image-games,
+        .background-image-artists,
+        .background-image-sfx {
+            height: 100vh;
+            background-position: center;
+            position: relative; 
+            background-size: cover;
+            cursor: pointer;
+            transition: background-color 0.5s ease; 
+        }
+
+        .background-image-games {
+            background-image: url('works/previews/gamespreview.png');
+        }
+
+        .background-image-games:hover {
+            background-color: rgb(255, 87, 87); 
+            background-blend-mode:luminosity; 
+        }
+
+        .background-image-artists {
+            background-image: url('works/previews/artistspreview.png');
+        }
+
+        .background-image-artists:hover {
+            background-color: rgba(148, 112, 255, 0.629); 
+            background-blend-mode:color-dodge; 
+        }
+
+        .background-image-sfx {
+            background-image: url('works/previews/sfxpreview.png');
+        }
+
+        .background-image-sfx:hover {
+            background-color: rgba(136, 97, 255, 0.523); 
+            background-blend-mode:color-dodge; 
+        }
+
+        .text-overlay {
+            position: absolute;
+            bottom: 5px; 
+            right: 10px; 
+            color: #ffffff;
+            font-size: 40px;
+            letter-spacing: 5px;
+        }
+
+        .icon-container {
+            display: flex;
+        }
+
+        .icon-container img {
+            width: 30px;
+            height: 30px;
+        }
+
+        #language-switcher {
+            cursor: pointer;
+            font-size: 25px;
+            color: #000000;
+            text-align: center;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        #language-switcher:hover {
+            background-color: #bebebe;
+        }
+
+        @media(max-width:992px) {
+            body {
+                overflow-y: scroll;
+                overflow-x: hidden;
+            }
+            .background-image-games, 
+            .background-image-artists, 
+            .background-image-sfx {
+                background-size: cover;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="sidebar col-12 col-lg-2">
+                <a id="nav-about" href="#about" class="nav-item nav-link" onclick="redirectToPage('page1.html')">СВЕДЕНИЯ</a>
+                <a id="nav-works" href="#works" class="nav-item nav-link" onclick="redirectToPage('page2.html')">РАБОТЫ</a>
+                <a id="nav-shop" href="#shop" class="nav-item nav-link" onclick="redirectToPage('page3.html')">МАГАЗИН</a>
+                <a id="nav-links" href="https://taplink.cc/lkn" class="nav-item nav-link" target="_blank">ССЫЛКИ</a>
+                <div id="language-switcher" class="nav-item nav-link" onclick="toggleLanguage()">EN</div>
+            </nav>
+
+            <div class="background-image-games col-12 col-lg position-relative" onclick="redirectToPage('page2-games.html')">
+                <div id="text-games" class="text-overlay">games</div>
+            </div>
+            
+            <div class="background-image-artists col-12 col-lg position-relative" onclick="redirectToPage('page2-artists.html')">
+                <div id="text-artists" class="text-overlay">artists</div>
+            </div>
+
+            <div class="background-image-sfx col-12 col-lg position-relative" onclick="redirectToPage('page2-sfx.html')">
+                <div id="text-sfx" class="text-overlay">sfx</div>
+            </div>
+        </div>
+    </div>
+    <script src="language.js"></script>
+    <script src="activeselection.js"></script>
+    <script src="redirection.js"></script>
+</body>
+</html>
