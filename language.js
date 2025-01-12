@@ -43,8 +43,8 @@ function translateToEnglish() {
 
     if (document.getElementById('shop-text')) {
         document.getElementById('shop-text').textContent = 'Like the work and want to support?';
-        document.getElementById('shop-text-animation1').innerHTML = '⇒shop.shop.<br>⇒shop.shop.<br>⇒shop.shop.<br>⇒shop.shop.<br>⇒shop.shop.<br>⇒shop.shop.<br>⇒shop.shop.<br>⇒shop.shop.<br>⇒shop.shop.<br>⇒shop.shop.<br>⇒shop.shop.<br>';
-        document.getElementById('shop-text-animation2').innerHTML = '⇒shop.shop.<br>⇒shop.shop.<br>⇒shop.shop.<br>⇒shop.shop.<br>⇒shop.shop.<br>⇒shop.shop.<br>⇒shop.shop.<br>⇒shop.shop.<br>⇒shop.shop.<br>⇒shop.shop.<br>⇒shop.shop.<br>';
+        document.getElementById('shop-text-animation1').innerHTML = '⇒private.private.<br>⇒private.private.<br>⇒private.private.<br>⇒private.private.<br>⇒private.private.<br>⇒private.private.<br>⇒private.private.<br>⇒private.private.<br>⇒private.private.<br>⇒private.private.<br>⇒private.private.<br>';
+        document.getElementById('shop-text-animation2').innerHTML = '⇒private.private.<br>⇒private.private.<br>⇒private.private.<br>⇒private.private.<br>⇒private.private.<br>⇒private.private.<br>⇒private.private.<br>⇒private.private.<br>⇒private.private.<br>⇒private.private.<br>⇒private.private.<br>';
     }
 
    if (document.getElementById('ashesrole')) {
@@ -121,8 +121,8 @@ function translateToRussian() {
 
     if (document.getElementById('shop-text')) {
         document.getElementById('shop-text').textContent = 'Нравятся работы и есть желание поддержать?';
-        document.getElementById('shop-text-animation1').innerHTML = '⇒МАГАЗИН.<br>⇒МАГАЗИН.<br>⇒МАГАЗИН.<br>⇒МАГАЗИН.<br>⇒МАГАЗИН.<br>⇒МАГАЗИН.<br>⇒МАГАЗИН.<br>⇒МАГАЗИН.<br>⇒МАГАЗИН.<br>⇒МАГАЗИН.<br>⇒МАГАЗИН.';
-        document.getElementById('shop-text-animation2').innerHTML = '⇒МАГАЗИН.<br>⇒МАГАЗИН.<br>⇒МАГАЗИН.<br>⇒МАГАЗИН.<br>⇒МАГАЗИН.<br>⇒МАГАЗИН.<br>⇒МАГАЗИН.<br>⇒МАГАЗИН.<br>⇒МАГАЗИН.<br>⇒МАГАЗИН.<br>⇒МАГАЗИН.';
+        document.getElementById('shop-text-animation1').innerHTML = '⇒ПРИВАТ.<br>⇒ПРИВАТ.<br>⇒ПРИВАТ.<br>⇒ПРИВАТ.<br>⇒ПРИВАТ.<br>⇒ПРИВАТ.<br>⇒ПРИВАТ.<br>⇒ПРИВАТ.<br>⇒ПРИВАТ.<br>⇒ПРИВАТ.<br>⇒ПРИВАТ.';
+        document.getElementById('shop-text-animation2').innerHTML = '⇒ПРИВАТ.<br>⇒ПРИВАТ.<br>⇒ПРИВАТ.<br>⇒ПРИВАТ.<br>⇒ПРИВАТ.<br>⇒ПРИВАТ.<br>⇒ПРИВАТ.<br>⇒ПРИВАТ.<br>⇒ПРИВАТ.<br>⇒ПРИВАТ.<br>⇒ПРИВАТ.';
     }
 
     if (document.getElementById('ashesrole')) {
