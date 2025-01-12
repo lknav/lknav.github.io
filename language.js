@@ -42,7 +42,7 @@ function translateToEnglish() {
     }
 
     if (document.getElementById('shop-text')) {
-        document.getElementById('shop-text').textContent = 'Like the beats or sfx?';
+        document.getElementById('shop-text').textContent = 'Like the work and want to support?';
         document.getElementById('shop-text-animation1').innerHTML = '⇒shop.shop.<br>⇒shop.shop.<br>⇒shop.shop.<br>⇒shop.shop.<br>⇒shop.shop.<br>⇒shop.shop.<br>⇒shop.shop.<br>⇒shop.shop.<br>⇒shop.shop.<br>⇒shop.shop.<br>⇒shop.shop.<br>';
         document.getElementById('shop-text-animation2').innerHTML = '⇒shop.shop.<br>⇒shop.shop.<br>⇒shop.shop.<br>⇒shop.shop.<br>⇒shop.shop.<br>⇒shop.shop.<br>⇒shop.shop.<br>⇒shop.shop.<br>⇒shop.shop.<br>⇒shop.shop.<br>⇒shop.shop.<br>';
     }
@@ -120,7 +120,7 @@ function translateToRussian() {
     }
 
     if (document.getElementById('shop-text')) {
-        document.getElementById('shop-text').textContent = 'Понравились биты или звуковые эффекты?';
+        document.getElementById('shop-text').textContent = 'Нравятся работы и есть желание поддержать?';
         document.getElementById('shop-text-animation1').innerHTML = '⇒МАГАЗИН.<br>⇒МАГАЗИН.<br>⇒МАГАЗИН.<br>⇒МАГАЗИН.<br>⇒МАГАЗИН.<br>⇒МАГАЗИН.<br>⇒МАГАЗИН.<br>⇒МАГАЗИН.<br>⇒МАГАЗИН.<br>⇒МАГАЗИН.<br>⇒МАГАЗИН.';
         document.getElementById('shop-text-animation2').innerHTML = '⇒МАГАЗИН.<br>⇒МАГАЗИН.<br>⇒МАГАЗИН.<br>⇒МАГАЗИН.<br>⇒МАГАЗИН.<br>⇒МАГАЗИН.<br>⇒МАГАЗИН.<br>⇒МАГАЗИН.<br>⇒МАГАЗИН.<br>⇒МАГАЗИН.<br>⇒МАГАЗИН.';
     }
