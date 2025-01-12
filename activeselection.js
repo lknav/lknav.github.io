@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() { 
     const currentPage = window.location.pathname.split("/").pop(); 
     
-    if (currentPage === "page1.html") {
+    if (currentPage === "index.html") {
         document.getElementById("nav-about").classList.add("active");
     } 
     else if (currentPage === "page2.html") {
