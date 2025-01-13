@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", function() {
     if (currentPage === "index.html") {
         document.getElementById("nav-about").classList.add("active");
     } 
-    
     else if (currentPage === "page2.html") {
         document.getElementById("nav-works").classList.add("active");
     }
