@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Alumni Sans', sans-serif;
+            overflow: hidden;
+        }
+
+        .sidebar {
+            height: auto;
+            background-color: #ffffff;
+            letter-spacing: 5px;
+            padding: 0;
+            z-index: 1;
+        }
+
+        .nav-item {
+            font-size: 25px;
+            color: #000000;
+            text-align: center;
+            padding: 8px, 16px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .nav-item:hover, 
+        .nav-item:focus {
+            text-decoration: none;
+            color: #000000;
+            background-color: #bebebe;
+        }
+
+        .nav-item.active {
+            background-size: cover;
+            background-position: center;
+            background-image: url('icons/active selection.avif');
+        }
+
+        .background-image {
+            height: 100vh;
+            background-image: url('backgrounds/artistsbackground.jpg');
+            background-position: center;
+            background-size: cover;
+        }
+
+        .grid {
+            display: grid;
+            width: 100%;
+            overflow-y: auto;
+            max-height: 100vh;
+        }
+
+        .grid-item {
+            width: 100%;
+            cursor: pointer;
+            transition: opacity 0.3s ease;
+        }
+
+        .grid-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            opacity: 0.2;
+            transition: opacity 0.3s ease;
+        }
+
+        .grid-item:hover img {
+            opacity: 1;
+        }
+
+        .container-fluid {
+            padding: 0;
+        }
+
+        .row.w-100.h-100 {
+            margin: 0;
+        }
+
+        .offset-lg-6.col-lg-6.col-12 {
+            padding: 0;
+        }
+
+        .row {
+            margin: 0;
+        }
+
+        .content {
+            position: absolute;
+        }
+
+        #language-switcher {
+            cursor: pointer;
+            font-size: 25px;
+            color: #000000;
+            text-align: center;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        #language-switcher:hover {
+            background-color: #bebebe;
+        }
+
+        @media(max-width:992px) {
+            .background-image {
+                background-image: none;
+                width: 0;
+                height: 0;
+            }
+            .grid {
+                overflow-y: unset;
+            }
+            .row.w-100.h-100 {
+                position: relative;
+            }
+            .grid-item img {
+                opacity: 1;
+            }
+            body {
+                overflow-y: scroll;
+                overflow: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="sidebar col-lg-2">
+                <a id="nav-about" href="#about" class="nav-item nav-link" onclick="redirectToPage('index.html')">СВЕДЕНИЯ</a>
+                <a id="nav-works" href="#works" class="nav-item nav-link" onclick="redirectToPage('page2.html')">РАБОТЫ</a>
+                <a id="nav-shop" href="#shop" class="nav-item nav-link" onclick="redirectToPage('page3.html')">ПРИВАТНЫЙ КАНАЛ</a>
+                <a id="nav-links" href="https://taplink.cc/lkn" class="nav-item nav-link" target="_blank">ССЫЛКИ</a>
+                <a id="back" href="#back" class="back nav-item nav-link" onclick="redirectToPage('page2-artists.html')">НАЗАД</a>
+                <div id="language-switcher" class="nav-item nav-link" onclick="toggleLanguage()">EN</div>
+            </nav>
+
+            <div class="background-image col-12 col-sm-12 col-lg-10 position-relative"></div>
+    
+            <div class="row content w-100 h-100" style="top: 0; left: 0;">
+                <div class="offset-lg-2 col-lg-10 col-12" style="padding: 0;">
+                    <div class="grid">
+                        <div class="grid-item" onclick="redirectToPage('page2-artists-lkn-stronghold.html')">
+                            <img src="works/previews/strongholdpreview.avif" alt="Изображение 1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="language.js"></script>
+    <script src="activeselection.js"></script>
+    <script src="redirection.js"></script>
+</body>
+</html>

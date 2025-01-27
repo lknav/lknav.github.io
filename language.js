@@ -91,6 +91,11 @@ function translateToEnglish() {
         document.getElementById('moontext').innerHTML= "All rights to Sailor Moon are owned by <a id='mooninspiration' href='https://en.wikipedia.org/wiki/Naoko_Takeuchi' target='_blank'>Naoko Takeuchi</a>, <a id='moonpublisher' href='https://kodansha.us' target='_blank'>Kodansha Publishing</a> and <a id='moonstudio' href='https://en.wikipedia.org/wiki/Toei_Animation' target='_blank'>Toei Animation Studio</a>.";
     }
 
+    if (document.getElementById('strongholdrole')) {
+        document.getElementById('strongholdrole').textContent = 'ROLE: AUTHOR';
+        document.getElementById('strongholdtext').innerHTML= "stronghold contains some of my favorite genres, I like them, even if this kind of music is not as loved as some hip-hop.<br>Initially I planned to record the voice and spent a lot of time on lyrics and information gathering, but in the end I recorded and realized that the voice is not necessary here. There were some problems with the recording and I was trying to figure out how I could do the voice, but the mix itself is wide and already full, so I left the instrumental.";
+    }
+
 }
 
 function translateToRussian() {
@@ -167,6 +172,11 @@ function translateToRussian() {
         document.getElementById('moonrole').textContent = 'РОЛЬ : НЕТ (ПЕРЕРАБОТКА / НЕОФИЦИАЛЬНАЯ ВЕРСИЯ)';
         document.getElementById('mooninspiration').innerHTML = '<a id="mooninspiration" href="https://en.wikipedia.org/wiki/Sailor_Moon" target="_blank">ВДОХНОВЛЕНО: SAILOR MOON</a>';
         document.getElementById('moontext').innerHTML= "Все права на Сейлор Мун принадлежат <a id='mooninspiration' href='https://en.wikipedia.org/wiki/Naoko_Takeuchi' target='_blank'>Наоко Такэути</a>, издательству <a id='moonpublisher' href='https://kodansha.us' target='_blank'>Kodansha</a> и студии <a id='moonstudio' href='https://en.wikipedia.org/wiki/Toei_Animation' target='_blank'>Toei Animation</a>.";
+    }
+
+    if (document.getElementById('strongholdrole')) {
+        document.getElementById('strongholdrole').textContent = 'РОЛЬ : АВТОР';
+        document.getElementById('strongholdtext').innerHTML= "stronghold вмещает в себя одни из моих любимейших жанров, мне они нравятся, даже если подобную музыку не так любят, как какой нибудь хип-хоп.<br>Изначально я планировал записать голос и в целом много времени потратил на текст и сбор информации, но по итогу позаписывался и понял, что голос здесь не к чему. Были проблемы с записью и я пытался понять как мне все же сделать голос, но микс сам по себе широкий и уже заполненный, так что я оставил инструментал.";
     }
 
 }
