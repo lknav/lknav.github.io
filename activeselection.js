@@ -31,6 +31,9 @@ document.addEventListener("DOMContentLoaded", function() {
     else if (currentPage === "page2-artists-lkn-stronghold.html") {
         document.getElementById("nav-works").classList.add("active");
     }
+    else if (currentPage === "page2-artists-lkn-snowfall.html") {
+        document.getElementById("nav-works").classList.add("active");
+    }
     else if (currentPage === "page2-artists-rise.html") {
         document.getElementById("nav-works").classList.add("active");
     }

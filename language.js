@@ -96,6 +96,11 @@ function translateToEnglish() {
         document.getElementById('strongholdtext').innerHTML= "stronghold contains some of my favorite genres, I like them, even if this kind of music is not as loved as some hip-hop.<br>Initially I planned to record the voice and spent a lot of time on lyrics and information gathering, but in the end I recorded and realized that the voice is not necessary here. There were some problems with the recording and I was trying to figure out how I could do the voice, but the mix itself is wide and already full, so I left the instrumental.";
     }
 
+    if (document.getElementById('snowfallrole')) {
+        document.getElementById('snowfallrole').textContent = 'ROLE: PRODUCER';
+        document.getElementById('snowfalltext').innerHTML= "The original plans with <a id='FlowerPur' href='https://t.me/+cPVPTxBlpOhiNjI6' target='_blank'>FlowerPur</a> were that I would be on vocals, but again deadlines, again it's hard to combine a lot of work together, so we decided it's better to keep it that way, and then maybe re-release the instrumental and the track with vocals. Decent and I would add clean work.";
+    }
+
 }
 
 function translateToRussian() {
@@ -177,6 +182,11 @@ function translateToRussian() {
     if (document.getElementById('strongholdrole')) {
         document.getElementById('strongholdrole').textContent = 'РОЛЬ : АВТОР';
         document.getElementById('strongholdtext').innerHTML= "stronghold вмещает в себя одни из моих любимейших жанров, мне они нравятся, даже если подобную музыку не так любят, как какой нибудь хип-хоп.<br>Изначально я планировал записать голос и в целом много времени потратил на текст и сбор информации, но по итогу позаписывался и понял, что голос здесь не к чему. Были проблемы с записью и я пытался понять как мне все же сделать голос, но микс сам по себе широкий и уже заполненный, так что я оставил инструментал.";
+    }
+
+    if (document.getElementById('snowfallrole')) {
+        document.getElementById('snowfallrole').textContent = 'РОЛЬ: ПРОДЮСЕР';
+        document.getElementById('snowfalltext').innerHTML= "Первоначальные планы с <a id='FlowerPur' href='https://t.me/+cPVPTxBlpOhiNjI6' target='_blank'>FlowerPur</a>  состояли из того что я буду на вокале, но снова сроки, снова тяжело совмещать много работы вместе, так что мы решили лучше оставить так, и потом возможно перевыпустить инструментал и трек с вокалом. Достойная и я бы добавил, что чистая работа.";
     }
 
 }
